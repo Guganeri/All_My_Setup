@@ -1,0 +1,11 @@
+mkdir ssh-keys
+cd ssh-keys
+
+ssh-keygen -t rsa
+
+#vagrant up
+
+ssh-copy-id -i vagrant_id_rsa.pub vagrant@ip
+
+
+#udo ansible-playbook provisioning.yml -u vagrant -i hosts --private-key ssh-keys/vagrant_id_rsa
