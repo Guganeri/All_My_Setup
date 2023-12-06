@@ -1,4 +1,0 @@
-[wordpress]
-192.168.0.50 ansible_user=vagrant anible_ssh_private_key_file="/home/gustavosilva/Área de Trabalho/ansible-alura/.vagrant/machines/wordpress/virtualbox/private_key"
-[database]
-192.168.0.52 ansible_user=vagrant anible_ssh_private_key_file="/home/gustavosilva/Área de Trabalho/ansible-alura/.vagrant/machines/wordpress/virtualbox/private_key"
