@@ -1,0 +1,25 @@
+---
+- name: PG Install
+  hosts: all
+  become: true
+
+  vars:
+    local_libs_path: /home/android/All_My_Setup/libs
+    remote_libs_path: /home/guganeriss/pg-compose/
+
+  tasks:
+    - name: Ajustar permissões do diretório de destino
+      file:
+        path: "{{ remote_libs_path }}"
+        state: directory
+        mode: '0755'
+        recurse: yes
+
+    - name: Copiar a pasta pg-compose para o host de destino
+      copy:
+        src: "{{ local_libs_path }}"
+        dest: "{{ remote_libs_path }}"
+
+    - name: Executar o PG via docker no container
+      shell: "cd /home/guganeriss/pg-compose/ && docker-compose up -d"
+      register: output
