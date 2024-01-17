@@ -1,0 +1,13 @@
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Min Dark",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.7,
+    "editor.renderLineHighlight": "gutter",
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,   
+
+}
